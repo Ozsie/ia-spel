@@ -14,11 +14,8 @@
 </template>
 
 <script>
-let fc = require('../firebaseConnection')
-let app = fc.app
-
-let db = app.database()
-let testRef = db.ref('test')
+import fc from '../firebaseConnection'
+let testRef = fc.db.ref('test')
 
 export default {
   firebase: {

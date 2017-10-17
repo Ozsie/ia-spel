@@ -1,4 +1,4 @@
-let Firebase = require('firebase')
+import Firebase from 'firebase'
 
 let config = {
   apiKey: 'AIzaSyCwWyGUQ--YykBTlM0iK1_e7i9fgpvHEJs',
@@ -10,7 +10,8 @@ let config = {
 }
 
 let app = Firebase.initializeApp(config)
+let db = app.database()
 
-module.exports = {
-  app: app
+export default {
+  db
 }
