@@ -1,15 +1,6 @@
 <template>
-  <div class="hello">
-    <tbody>
-      <tr>
-        <td><a href="#/login">LOGIN</a></td>
-        <td></td>
-      </tr>
-      <tr v-for="test in tests">
-        <td><a v-bind:href="test.A">{{test.A}}</a></td>
-        <td>{{test.C}}</td>
-      </tr>
-    </tbody>
+  <div class="login">
+    Login
   </div>
 </template>
 
